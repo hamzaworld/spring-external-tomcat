@@ -8,8 +8,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/demo")
 public class DemoController {
 
-	@GetMapping("/getMessage")
+	@GetMapping("/message")
 	public String demoMessage() {
 		return "This is a sample rest end point";
+	}
+	
+	@GetMapping("/greeting")
+	public String getGreeting() {
+		return "This is a greeting via demo rest end point";
 	}
 }
