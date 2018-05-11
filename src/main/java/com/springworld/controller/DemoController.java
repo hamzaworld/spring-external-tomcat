@@ -17,4 +17,9 @@ public class DemoController {
 	public String getGreeting() {
 		return "This is a greeting via demo rest end point";
 	}
+	
+	@GetMapping("/greeting1")
+	public String getGreeting1() {
+		return "This is a greeting via demo rest end point";
+	}
 }
